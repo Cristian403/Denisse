@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>agradecimientos</title>
+  <style>
+    body {
+      background-color: #f8d7da; /* Fondo rosa pastel */
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("https://www.transparenttextures.com/patterns/flowers.png");
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+    
+    h1 {
+      font-family: 'Courier New', cursive;
+    }
+
+    ul {
+      font-family: 'Georgia', serif;
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 2em;
+      color: red;
+      animation: floatUp 1.5s ease-out forwards;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+    }
+
+    /* Resaltar último elemento de la lista */
+    .last {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    /* Media query para pantallas pequeñas, como el Samsung A54 */
+    @media (max-width: 1080px) {
+      h1 {
+        font-size: 2.5em;
+        padding: 15px;
+      }
+      h2 {
+        font-size: 1.2em;
+        padding: 15px;
+      }
+      img {
+        width: 90%;
+        max-width: 280px;
+      }
+    }
+
+    /* Media query para pantallas más pequeñas (por debajo de 600px) */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+        padding: 10px;
+      }
+      h2 {
+        font-size: 1em;
+        padding: 10px;
+      }
+      img {
+        width: 90%;
+        max-width: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1><center>Cosas que quiero agradecerte</center></h1>
+  <ul>
+    <li>Que me sigas permitiendo estar a tu lado.</li>
+    <li>Que hayas creído en mí.</li>
+    <li>Que me dejes amarte día con día.</li>
+    <li>Que me saques una sonrisa diario.</li>
+    <li>Que estés curando heridas que tú no causaste.</li>
+    <li>Que saques la mejor versión de mí.</li>
+    <li>Que me motives a seguir mejorando.</li>
+    <li>Que hagas que cada día sea único a tu lado.</li>
+    <li>Que no sé qué me haces, pero siempre logras que vuelva a sentir mil y un cosas por ti.</li>
+  </ul>
+<h1><center>Cosas que me gustan de ti</center></h1>
+<ul>
+  <li>Tu sonrisa.</li>
+  <li>Tu risa.</li>
+  <li>Tus ojos.</li>
+  <li>Tus cachetes tan bonitos.</li>
+  <li>Tu cabello.</li>
+  <li>Tus manos.</li>
+  <li>Tu manera de hacer las cosas.</li>
+  <li>Tu voz.</li>
+  <li>Tu manera de amar.</li>
+  <li>Tu valentía.</li>
+  <li>Lo inteligente que eres.</li>
+  <li>Tu compromiso con que todo salga bien.</li>
+  <li>La manera en la que me abrazas.</li>
+  <li>Tu honestidad al hablar de temas profundos.</li>
+  <li>Tu gusto musical.</li>
+  <li>Que me digas que me amas.</li>
+  <li>Tu estilo.</li>
+  <li>No te das por vencida.</li>
+  <li>La manera en la que me miras.</li>
+  <p>POR ÚLTIMO PERO NO MENOS IMPORTANTE:</p>
+</ul>
+  <p class="last">TÚ</p>
+
+<script>
+  document.addEventListener("click", function(event) {
+    let heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "❤";
+    heart.style.left = `${event.clientX}px`;
+    heart.style.top = `${event.clientY}px`;
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 1500);
+  });
+</script>
+
+</body>
+</html>

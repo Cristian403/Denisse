@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Te amo</title>
+  <style>
+    body {
+      background-color: #f8d7da;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("https://www.transparenttextures.com/patterns/flowers.png");
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+    h1, h2 {
+      text-align: center;
+      font-style: cursive;
+      color: #5A3E36;
+      margin-top: 20px;
+      padding: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      
+      width: 80%;
+      margin-left: 10%;
+      border-radius: 10px;
+    }
+    h1 {
+      font-size: 3em;
+      font-family: cursive, Arial, Helvetica, sans-serif;
+      padding: 20px;
+      
+    }
+    h2 {
+      font-size: 1.5em;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      line-height: 1.6;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 15px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+      width: 80%;
+      max-width: 300px;
+    }
+    .heart {
+      position: absolute;
+      font-size: 2em;
+      color: red;
+      animation: floatUp 1.5s ease-out forwards;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-100px) scale(1.5); opacity: 0; }
+    }
+
+    /* Media query para pantallas pequeñas, como el Samsung A54 */
+    @media (max-width: 1080px) {
+      h1 {
+        font-size: 2.5em;
+        padding: 15px;
+      }
+      h2 {
+        font-size: 1.2em;
+        padding: 15px;
+      }
+      img {
+        width: 90%;
+        max-width: 280px;
+      }
+    }
+
+    /* Media query para pantallas más pequeñas (por debajo de 600px) */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+        padding: 10px;
+      }
+      h2 {
+        font-size: 1em;
+        padding: 10px;
+      }
+      img {
+        width: 90%;
+        max-width: 250px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>TE AMO</h1>
+  <h2>Te amo muchisimo y espero que la vida me permita y me conceda el tiempo 
+    para poder demostrarte cuanto te amo pues siento que las palabras no son suficientes, 
+    este proyecto lo inicie hace un tiempo y lo quise hacer de esta manera pues es algo que me 
+    gusta hacer y por ti, créeme que yo haría cualquier cosa por ti, cualquier cosa para que te 
+    sientas querida por mi. Además no hay cosa que me deje de amarte y si me lo permites quiero 
+    amarte toda la vida si es posible, creo que jamás había querido a una persona de la manera 
+    en la que te quiero a ti. TE AME, TE AMO Y TE AMARÉ.
+  </h2>
+  <img src="images/gatito.JPEG" alt="Gatito">
+
+  <script>
+    document.addEventListener("click", function(event) {
+      let heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "❤";
+      heart.style.left = `${event.clientX}px`;
+      heart.style.top = `${event.clientY}px`;
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 1500);
+    });
+  </script>
+</body>
+</html>
