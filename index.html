@@ -38,7 +38,7 @@
 
         h1 {
             animation: slide-in 1s ease-out;
-            font-family: cursive, Arial, sans-serif;
+            font-family: Arial, sans-serif;
             color: #5A3E36;
             font-size: 28px;
             padding: 15px;
@@ -61,40 +61,6 @@
             text-align: center;
             text-transform: uppercase;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        .hidden-message {
-            display: none;
-            text-align: center;
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #d63384;
-            margin-top: 20px;
-        }
-
-        .reveal-button {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            cursor: pointer;
-            background-color: #d63384;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-
-        /* Efecto de animación cuando se presiona el botón */
-        .button:active {
-            transform: scale(0.95);
-            background-color: #FF69B4;
-        }
-
-        /* Agregando animación al presionar en dispositivos móviles */
-        @media (hover: none) {
-            .button:active {
-                animation: pulse 0.3s ease-in-out;
-            }
         }
 
         @keyframes pulse {
