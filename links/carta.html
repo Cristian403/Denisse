@@ -15,6 +15,14 @@
       background-position: center;
       overflow: hidden;
       text-align: center;
+      overflow-x: hidden; /* Para evitar que la página se deslice horizontalmente */
+      min-height: 100vh; /* Asegura que la altura del cuerpo cubra todo el contenido visible */
+      }
+
+/* Agregar esto para permitir el desplazamiento normal en dispositivos móviles */
+    html, body {
+      height: 100%; /* Asegura que el contenido ocupe todo el espacio disponible */
+      margin: 0; /* Elimina márgenes predeterminados */
     }
 
     h1 {
